@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">You Budget</string>
+    <string name="action_settings">Settings</string>
+    <string name="subtitle1">For all your budgeting needs</string>
+    <string name="placehold">Placeholder</string>
+    <string name="dateholder">date</string>
+    <string name="budgetName">Budget Name</string>
+    <string name="budgetTotal">Budget Total</string>
+    <string name="savingGoal">Savings Goal</string>
+    <string name="cat1">Gas</string>
+    <string name='cat2'>Savings</string>
+    <string name='cat3'>Grocery</string>
+    <string name='cat4'>Food</string>
+    <string name='cat5'>Rent</string>
+    <string name='cat6'>Utilities</string>
+    <string name='cat7'>Other</string>
+    <string name='cat8'>Insurance</string>
+    <string name='cat9'>Entertainment</string>
+</resources>
