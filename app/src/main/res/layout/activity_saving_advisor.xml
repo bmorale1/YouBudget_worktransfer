@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#585951">
+
+    <EditText
+        android:id="@+id/selectanAmount"
+        android:layout_width="352dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:inputType="none"
+        android:text="How much would you like to save"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/inSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/length_of_save" />
+
+    <RadioGroup
+        android:id="@+id/length_of_save"
+        android:layout_width="99dp"
+        android:layout_height="83dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/selectanAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/selectaLength"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <RadioButton
+            android:id="@+id/radioButton_weeks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Weeks"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton_months"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Months"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton_years"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Years"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/selectaLength"
+        android:layout_width="253dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="none"
+        android:text="Select a length and input a number"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/inLength"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <EditText
+        android:id="@+id/inSave"
+        android:layout_width="352dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="enter a number"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/editText4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectanAmount" />
+
+    <EditText
+        android:id="@+id/inLength"
+        android:layout_width="253dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="enter a number"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/selectanAmount"
+        app:layout_constraintEnd_toStartOf="@+id/length_of_save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectaLength" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="352dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/colorAccent"
+        android:text="submit"
+        android:textColor="?attr/actionModeSplitBackground"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton9" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="352dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Savings Advisor"
+        android:textAlignment="center"
+        android:textColor="?attr/colorBackgroundFloating"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/length_of_save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="352dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="1dp"
+        android:text="In order to do this you want to save.."
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submit" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="407dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="352dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Select pay period and enter avg pay"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/inPay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inSave" />
+
+    <EditText
+        android:id="@+id/inPay"
+        android:layout_width="352dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="enter avg pay"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/radioButton9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+    <RadioButton
+        android:id="@+id/radioButton9"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Weekly"
+        app:layout_constraintEnd_toStartOf="@+id/radioButton10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inPay" />
+
+    <RadioButton
+        android:id="@+id/radioButton10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bi-weekly"
+        app:layout_constraintEnd_toStartOf="@+id/radioButton11"
+        app:layout_constraintStart_toEndOf="@+id/radioButton9"
+        app:layout_constraintTop_toBottomOf="@+id/inPay" />
+
+    <RadioButton
+        android:id="@+id/radioButton11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monthly"
+        app:layout_constraintEnd_toStartOf="@+id/radioButton12"
+        app:layout_constraintStart_toEndOf="@+id/radioButton10"
+        app:layout_constraintTop_toBottomOf="@+id/inPay" />
+
+    <RadioButton
+        android:id="@+id/radioButton12"
+        android:layout_width="71dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="31dp"
+        android:text="Yearly"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioButton11"
+        app:layout_constraintTop_toBottomOf="@+id/inPay" />
+
+</android.support.constraint.ConstraintLayout>
