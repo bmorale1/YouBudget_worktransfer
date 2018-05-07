@@ -1,4 +1,4 @@
-package com.example.coryyelverton.budgetapp;
+package com.example.isaac.youbudget;
 
 /**
  * Created by Cory Yelverton on 4/29/2018.
@@ -11,20 +11,66 @@ import java.util.concurrent.TimeUnit;
 
 public class SavingsPlan {
     Long startingDate;
+    int savingsInterval;
+    int savingsIntervalNumber;
+    int payPeriodInterval;
+    int payPeriodIntervalNumber;
     Long endingDate;
     double savingsGoal;
+    double mySavings;
+    double periodSavings;
     double total;
+    String savingsMessage;
     ArrayList spendingList = new ArrayList<Item>();
 
-    public SavingsPlan(Long startingDate, Long endingDate, double savingsGoal){
-        this.startingDate = startingDate;
-        this.endingDate = endingDate;
-        this.savingsGoal = savingsGoal;
+    public SavingsPlan(int savingsInterval, int savingsIntervalNumber, int payPeriodInterval, int payPeriodIntervalNumber, double total){
+        this.savingsInterval = savingsInterval;
+        this.savingsIntervalNumber = savingsIntervalNumber;
+        this.payPeriodInterval = payPeriodInterval;
+        this.payPeriodIntervalNumber =  payPeriodIntervalNumber;
+        this.total = total;
+    }
+    public double calculateRequiredSavings(int savingsIntervalNumber, double total){
+       mySavings = total/savingsIntervalNumber;
+       return mySavings;
+    }
+    public double paycheckRequiredSavings(int savingsIntervalNumber, double total, int savingsInterval){
+        periodSavings = 0;
+        if(savingsInterval == 1){
+            periodSavings = total/savingsIntervalNumber;
+        }
+        else if(savingsInterval == 2){
+            periodSavings = total/savingsIntervalNumber;
+        }
+        else if(savingsInterval == 3){
+            periodSavings = total/savingsIntervalNumber;
+        }
+        else if(savingsInterval == 4){
+            periodSavings = total/savingsIntervalNumber;
+        }
+        return periodSavings;
+    }
+    public String savingsToString(double mySavings, int savingsInterval){
+        if(savingsInterval == 1) {
+           savingsMessage = "You need to save " + mySavings + "per week.";
+       }
+       else if(savingsInterval == 2){
+           savingsMessage = "You need to save " + mySavings + "per month.";
+       }
+       else  if(savingsInterval == 3){
+           savingsMessage = "You need to save " + mySavings + "per year.";
+       }
+       return savingsMessage;
+    }
+    public String paycheckToString(double paycheckSavings, int payPeriodInterval){
+        savingsMessage = "You need to save " + paycheckSavings + "per paycheck";
+        return savingsMessage;
+
     }
 
-    //calculate days
-    //calculate savings plans
-    //pie chart stuff
+
+
+
 
     public long daysToDate(Date startingDate, Date endingDate, TimeUnit timeUnit){
         long diffInMillies = endingDate.getTime() - startingDate.getTime();
@@ -52,5 +98,39 @@ public class SavingsPlan {
         return total;
     }
 
+    public double getTotal() {
+        return total;
+    }
 
+    public int getPayPeriodInterval() {
+        return payPeriodInterval;
+    }
+
+    public int getPayPeriodIntervalNumber() {
+        return payPeriodIntervalNumber;
+    }
+
+    public int getSavingsInterval() {
+        return savingsInterval;
+    }
+
+    public int getSavingsIntervalNumber() {
+        return savingsIntervalNumber;
+    }
+
+    public void setPayPeriodInterval(int payPeriodInterval) {
+        this.payPeriodInterval = payPeriodInterval;
+    }
+
+    public void setSavingsInterval(int savingsInterval) {
+        this.savingsInterval = savingsInterval;
+    }
+
+    public void setSavingsIntervalNumber(int savingsIntervalNumber) {
+        this.savingsIntervalNumber = savingsIntervalNumber;
+    }
+
+    public void setPayPeriodIntervalNumber(int payPeriodIntervalNumber) {
+        this.payPeriodIntervalNumber = payPeriodIntervalNumber;
+    }
 }
