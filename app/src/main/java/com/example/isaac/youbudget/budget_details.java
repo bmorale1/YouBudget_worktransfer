@@ -8,11 +8,9 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import javax.microedition.khronos.egl.EGLDisplay;
 
 public class budget_details extends AppCompatActivity {
     private EditText nameEditText;
@@ -54,28 +52,30 @@ public class budget_details extends AppCompatActivity {
     protected void onCreate(@Nullable final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        setContentView(R.layout.budget_details);
+
         nameEditText = (EditText)findViewById(R.id.name_field);
-        nameTextView = (TextView)findViewById(R.id.textView21);
+        nameTextView = (TextView)findViewById(R.id.budget_name);
         totalEditText = (EditText)findViewById(R.id.total_field);
-        totalTextView = (TextView)findViewById(R.id.textView20);
+        totalTextView = (TextView)findViewById(R.id.show_total);
         groceryEditText = (EditText)findViewById(R.id.grocery_field);
-        groceryTextView = (TextView)findViewById(R.id.textView6);
+        groceryTextView = (TextView)findViewById(R.id.show_grocery);
         foodEditText = (EditText)findViewById(R.id.Food_field);
-        foodTextView = (TextView)findViewById(R.id.textView23);
+        foodTextView = (TextView)findViewById(R.id.show_food);
         gasEditText = (EditText)findViewById(R.id.Gas_field);
-        gasTextView = (TextView)findViewById(R.id.textView28);
+        gasTextView = (TextView)findViewById(R.id.show_gas);
         entertainmentEditText = (EditText)findViewById(R.id.Entertainment_field);
-        entertainmentTextView = (TextView)findViewById(R.id.textView29);
+        entertainmentTextView = (TextView)findViewById(R.id.show_entertainment);
         rentEditText = (EditText)findViewById(R.id.rent_field);
-        rentTextView = (TextView)findViewById(R.id.textView25);
+        rentTextView = (TextView)findViewById(R.id.show_rent);
         savingsEditText = (EditText)findViewById(R.id.savings_field);
-        savingsTextView = (TextView)findViewById(R.id.textView22);
+        savingsTextView = (TextView)findViewById(R.id.show_savings);
         utilitiesEditText = (EditText)findViewById(R.id.Utilities_field);
-        utilitiesTextView = (TextView)findViewById(R.id.textView26);
+        utilitiesTextView = (TextView)findViewById(R.id.show_utilities);
         otherEditText = (EditText)findViewById(R.id.other_field);
-        otherTextView = (TextView)findViewById(R.id.textView30);
+        otherTextView = (TextView)findViewById(R.id.other_txt);
         insuranceEditText = (EditText)findViewById(R.id.Insurance_field);
-        insuranceTextView = (TextView)findViewById(R.id.textView27);
+        insuranceTextView = (TextView)findViewById(R.id.show_insurance);
         save = (FloatingActionButton)findViewById(R.id.floatingActionButton);
 
         save.setOnClickListener(new View.OnClickListener() {

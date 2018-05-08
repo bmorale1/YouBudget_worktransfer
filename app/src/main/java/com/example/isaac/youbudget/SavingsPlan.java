@@ -4,12 +4,14 @@ package com.example.isaac.youbudget;
  * Created by Cory Yelverton on 4/29/2018.
  */
 
+import android.support.v7.app.AppCompatActivity;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-public class SavingsPlan {
+public class SavingsPlan extends AppCompatActivity{
     Long startingDate;
     int savingsInterval;
     int savingsIntervalNumber;

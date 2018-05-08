@@ -1,4 +1,4 @@
-package com.example.coryyelverton.budgetapp;
+package com.example.isaac.youbudget;
 
 /**
  * Created by Cory Yelverton on 5/5/2018.
