@@ -57,52 +57,52 @@ public class budget_details extends AppCompatActivity {
         nameEditText = (EditText)findViewById(R.id.name_field);
         nameTextView = (TextView)findViewById(R.id.budget_name);
         totalEditText = (EditText)findViewById(R.id.total_field);
-        totalTextView = (TextView)findViewById(R.id.show_total);
+        //totalTextView = (TextView)findViewById(R.id.show_total);
         groceryEditText = (EditText)findViewById(R.id.grocery_field);
-        groceryTextView = (TextView)findViewById(R.id.show_grocery);
+        //groceryTextView = (TextView)findViewById(R.id.show_grocery);
         foodEditText = (EditText)findViewById(R.id.Food_field);
-        foodTextView = (TextView)findViewById(R.id.show_food);
+        //foodTextView = (TextView)findViewById(R.id.show_food);
         gasEditText = (EditText)findViewById(R.id.Gas_field);
-        gasTextView = (TextView)findViewById(R.id.show_gas);
+        //gasTextView = (TextView)findViewById(R.id.show_gas);
         entertainmentEditText = (EditText)findViewById(R.id.Entertainment_field);
-        entertainmentTextView = (TextView)findViewById(R.id.show_entertainment);
+        //entertainmentTextView = (TextView)findViewById(R.id.show_entertainment);
         rentEditText = (EditText)findViewById(R.id.rent_field);
-        rentTextView = (TextView)findViewById(R.id.show_rent);
+        //rentTextView = (TextView)findViewById(R.id.show_rent);
         savingsEditText = (EditText)findViewById(R.id.savings_field);
-        savingsTextView = (TextView)findViewById(R.id.show_savings);
+        //savingsTextView = (TextView)findViewById(R.id.show_savings);
         utilitiesEditText = (EditText)findViewById(R.id.Utilities_field);
-        utilitiesTextView = (TextView)findViewById(R.id.show_utilities);
+        //utilitiesTextView = (TextView)findViewById(R.id.show_utilities);
         otherEditText = (EditText)findViewById(R.id.other_field);
-        otherTextView = (TextView)findViewById(R.id.other_txt);
+        //otherTextView = (TextView)findViewById(R.id.other_txt);
         insuranceEditText = (EditText)findViewById(R.id.Insurance_field);
-        insuranceTextView = (TextView)findViewById(R.id.show_insurance);
+        //insuranceTextView = (TextView)findViewById(R.id.show_insurance);
         save = (FloatingActionButton)findViewById(R.id.floatingActionButton);
 
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 name = String.valueOf(nameEditText.getText());
-                nameTextView.setText(name);
+                nameEditText.setText(name);
                 total = String.valueOf(totalEditText.getText());
-                totalTextView.setText(total);
+                totalEditText.setText(total);
                 grocery = String.valueOf(groceryEditText.getText());
-                groceryTextView.setText(grocery);
+                groceryEditText.setText(grocery);
                 food = String.valueOf(foodEditText.getText());
-                foodTextView.setText(food);
+                foodEditText.setText(food);
                 gas = String.valueOf(gasEditText.getText());
-                gasTextView.setText(gas);
+                gasEditText.setText(gas);
                 entertainment = String.valueOf(entertainmentEditText.getText());
-                entertainmentTextView.setText(entertainment);
+                entertainmentEditText.setText(entertainment);
                 rent = String.valueOf(rentEditText.getText());
-                rentTextView.setText(rent);
+                rentEditText.setText(rent);
                 savings = String.valueOf(savingsEditText.getText());
-                savingsTextView.setText(savings);
+                savingsEditText.setText(savings);
                 utilities = String.valueOf(utilitiesEditText.getText());
-                utilitiesTextView.setText(utilities);
+                utilitiesEditText.setText(utilities);
                 other = String.valueOf(otherEditText.getText());
-                otherTextView.setText(other);
+                otherEditText.setText(other);
                 insurance = String.valueOf(insuranceEditText.getText());
-                insuranceTextView.setText(insurance);
+                insuranceEditText.setText(insurance);
 
 
             }
