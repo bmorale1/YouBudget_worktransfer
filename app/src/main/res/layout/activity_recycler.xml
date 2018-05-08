@@ -23,7 +23,7 @@
         android:padding="8dp">
 
         <TextView
-            android:id="@+id/date"
+            android:id="@+id/budget_date"
             android:layout_width="326dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
